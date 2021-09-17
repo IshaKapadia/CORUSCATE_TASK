@@ -1,0 +1,28 @@
+
+<h2>Display Records </h2>
+<table border="1">
+    <tr>
+      
+        <td>ID</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Email</td>
+        <td>Date</td>
+        <td>Amount</td>
+
+        
+      </tr>
+  <!-- Loop through Records -->
+  <% for(var i = 0; i < results.length; i++) {%>
+    <tr>
+      
+      <td><%= results[i].id %></td>
+      <td><%= results[i].firstname %></td>
+      <td><%= results[i].lastname %></td>
+      <td><%= results[i].email %></td>
+      <td><%= results[i].date %></td>
+      <td><%= results[i].Amount %></td>
+
+    </tr>
+  <% } %>
+</table>
